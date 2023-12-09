@@ -1,20 +1,23 @@
 * {
   box-sizing: border-box;
+
 }
 
 body {
   margin: 0px;
   padding: 0px;
   font: poppins;
+  background-color: black;
 }
 
 #main1 {
   width: 100%;
   height: 50vh;
 }
+
 #main {
   width: 100%;
-  height: 10vh;
+  height: 20vh;
 }
 
 nav {
@@ -25,13 +28,13 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: white;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: black;
+  box-shadow: 1px 1px 5px rgb(238, 236, 236);
   z-index: 1;
 }
 
 .logo img {
-  height: 45px;
+  height: 65px;
 }
 
 .menu {
@@ -49,7 +52,7 @@ nav {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
-  color: gray;
+  color: white;
 }
 
 a {
@@ -57,7 +60,7 @@ a {
 }
 
 .hey {
-  color: #39bfbd;
+  color: #29ab52;
   font-weight: 500;
   font-size: 0.9em;
   border-bottom: 2px solid #39bfbd;
@@ -91,13 +94,15 @@ a {
 
 .main-text h1 {
   font-size: 3.5em;
-  color: #1c3548;
+  color: hsl(59, 72%, 50%);
   margin: 0px 0px 10px 0px;
   line-height: 60px;
 }
 
 .main-text p {
-  color: gray;
+  color: white;
+  font-family: 'EB Garamond', serif;
+
 }
 
 .resume-btn {
@@ -196,34 +201,38 @@ body {
   transition: all ease 0.2s;
 }
 
-.box1{
+.box1 {
   position: relative;
   top: 0;
   left: 0;
 
 }
-.box2{
+
+.box2 {
   position: relative;
   top: 0;
   left: 0vh;
 }
-.box3{
+
+.box3 {
   position: relative;
   top: 0;
   left: 0vh;
 }
-.box4{
+
+.box4 {
   position: relative;
   top: 0vh;
   left: 0vh;
 }
-.box5{
+
+.box5 {
   position: relative;
   top: 33vh;
   left: 10vh;
-} 
+}
 
-.button1 {
+/* .button1 {
   margin-top: 5vh;
   padding: 5px;
   border: 0;
@@ -235,33 +244,110 @@ body {
 .button1:hover {
   color: white;
   background-color: #379832;
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-.contact{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
+
+.contact {
   margin-top: 15%;
   margin-left: 25%;
   margin-right: 0%;
   padding: 0px;
+  color: white;
 }
-#fname ,#lname,#mail,#contactno{
+
+#fname,
+#lname,
+#mail,
+#contactno {
   margin: 10px;
   margin-left: 0%;
   padding: 5px;
   width: 75%;
   border-radius: 5px;
   border-color: #73a6cd;
-  
+
 }
-#fname:hover{
-  border-color: #20d83c;
-}
-#lname:hover{
-  border-color: #20d83c;
-}
-#mail:hover{
-  border-color: #20d83c;
-}
-#contactno:hover{
+
+#fname:hover {
   border-color: #20d83c;
 }
 
+#lname:hover {
+  border-color: #20d83c;
+}
+
+#mail:hover {
+  border-color: #20d83c;
+}
+
+#contactno:hover {
+  border-color: #20d83c;
+}
+
+.btn {
+  outline: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #40B3A2;
+  min-width: 200px;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+  padding: 16px 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: .95;
+}
+
+.btn .animation {
+  border-radius: 100%;
+  animation: ripple 0.6s linear infinite;
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
+
+.typed-out {
+  overflow: hidden;
+  border-right: .15em solid rgb(20, 16, 10);
+  white-space: nowrap;
+  animation: typing 1s steps(20, end) forwards, blinking .8s infinite;
+  font-size: 1.6rem;
+  width: 0;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blinking {
+  from {
+    border-color: transparent
+  }
+
+  to {
+    border-color: white;
+  }
+}
