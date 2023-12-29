@@ -32,8 +32,9 @@ I'm open to suggestions, bug fixes, and creative collaborations! Feel free to fo
 5. Submit a pull request
 
 ## 📸 Preview 
-This is the present Screenshot of the website.
-![Alt Text](Image.jpg)
+This is the present Screenshot 💻 of the website.
+
+![Website](image.png)
 
 
 ## 📝 License
