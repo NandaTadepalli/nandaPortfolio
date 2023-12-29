@@ -31,6 +31,11 @@ I'm open to suggestions, bug fixes, and creative collaborations! Feel free to fo
 4. Push to the branch: `git push origin feature-name`
 5. Submit a pull request
 
+## 📸 Preview 
+This is the present Screenshot of the website.
+![Alt Text](Image.jpg)
+
+
 ## 📝 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
